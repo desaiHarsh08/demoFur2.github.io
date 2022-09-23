@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css
+
+
+
+    ">
+
+
+    <title>Cart - page</title>
+    
+    <!-- <script type="module" crossorigin src="./assets/index.eed757e4.js"></script> -->
+    <link rel="stylesheet" href="./index.2da899b7.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="fixed w-full top-0 right-0 z-[1000] bg-purple-500 px-2">
+        <nav class="mx-1 py-2 flex items-center justify-between text-white">
+          <div class="left flex items-center justify-between">
+  
+            <div class="cursor-pointer mx-7">
+              <span class="text-3xl font-semibold font-mono text-[#ffff00]"><span class="text-white">i</span>Logo</span>
+            </div>
+            <div class="hidden md:block">
+              <ul class="flex space-x-6">
+                <li class="hover:underline hover:scale-105 font-medium transition text-xl"><a href="../../index.html">Home</a></li>
+                <li class="hover:underline hover:scale-105 font-medium transition text-xl"><a href="#about">About</a></li>
+                <li class="hover:underline hover:scale-105 font-medium transition text-xl"><a href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="right flex space-x-3 order-3 mr-2">
+            <div class="login hidden md:flex cursor-pointer justify-center items-center">
+  
+              <i class="fa-solid fa-bell text-xl mx-1"></i>
+              <i class="fa-solid fa-comment-dots text-xl mx-1"></i>
+              <a href="../../index.html">
+                <i class="fa-solid fa-user text-xl mx-1"></i>
+              </a>
+            </div>
+            <div class="w-8 ww h-12 ww cursor-pointer z-99999999 md:hidden" id="hamburger">
+              <div class="bg-white my-2 w-full h-1 rounded-md transition delay-150 " id="bar1"></div>
+              <div class="bg-white my-2 w-full h-1 rounded-md transition-all delay-150 duration-150 " id="bar2"></div>
+              <div class="bg-white my-2 w-full h-1 rounded-md transition-all delay-150" id="bar3"></div>
+            </div>
+          </div>
+          <ul
+            class="py-3 md:hidden sm:flex sm:flex-col transition-all delay-150 translate-y-[-1000px] bg-blue-900  opacity-90 text-white absolute w-full top-16 left-0"
+            id="nav">
+            <li class="hover:underline py-3 text-center"><a href="../../index.html">Home</a></li>
+            <li class="hover:underline py-3 text-center"><a href="#about">About</a></li>
+            <li class="hover:underline py-3  text-center"><a href="#contact">Contact</a></li>
+            <li class="hover:underline py-3 text-center">
+              <a href="#shop">
+                <i class="fa-solid fa-bell text-xl mx-1"></i>
+                <span>Notifications</span>
+              </a>
+            </li>
+            <li class="hover:underline py-3 text-center">
+              <a href="#new">
+                <i class="fa-solid fa-comment-dots text-xl mx-1"></i>
+                <span>Messages</span>
+              </a>
+            </li>
+            <li class="hover:underline py-3 text-center">
+              <a href="../../index.html">
+                <i class="fa-solid fa-user text-xl mx-1"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+
+      <!-- Cart item details -->
+      <div class="small-container cart-page my-20 px-2 mx-auto w-[100%] md:w-[85%]">
+        <table class="w-full border-collapse font-normal">
+          <tr class="my-2">
+            <th class="w-1/3 rounded-sm p- 1 text-white bg-purple-500">Product</th>
+            <th class="w-1/3 rounded-sm p- 1 text-white bg-purple-500">Quantity</th>
+            <th class="w-1/3 rounded-sm p- 1 text-white bg-purple-500">Subtotal</th>
+          </tr>
+          <tr class="my-2">
+            <th class="w-1/3 py-2">
+              <div class="cart-info flex flex-col md:flex-row justify-center items-center gap-5 text-sm">
+                <img src="../img/f1.56acf8ca.jpg" class="w-20 h-20" alt="Product-image">
+                <div class="flex flex-col items-start justify-center px-1">
+                  <p class="text-left">Lorem, ipsum dolor.</p>
+                  <p class="text-left">Price: $59.80</p>
+                  <a href="" class="mt-2 text-red-600">Remove</a>
+                </div>
+              </div>
+            </th>
+            <th class="w-1/3"><input type="number" value="1" class="border w-20"></th>
+            <th class="w-1/3 text-right">$59.80</th>
+          </tr>
+          <tr class="my-2">
+            <th class="w-1/3 py-2">
+              <div class="cart-info flex flex-col md:flex-row justify-center gap-5 text-sm items-center">
+                <img src="../img/f2.2e868800.jpg" class="w-20 h-20" alt="Product-image">
+                <div class="flex flex-col items-start justify-center px-1">
+                  <p class="text-left">Lorem, ipsum dolor.</p>
+                  <p class="text-left">Price: $59.80</p>
+                  <a href="" class="mt-2 text-red-600">Remove</a>
+                </div>
+              </div>
+            </th>
+            <th class="w-1/3"><input type="number" value="1" class="border w-20"></th>
+            <th class="w-1/3 text-right">$59.80</th>
+          </tr>
+          <tr class="my-2">
+            <th class="w-1/3 py-2">
+              <div class="cart-info flex flex-col md:flex-row justify-center gap-5 text-sm items-center">
+                <img src="../img/f3.fc8b445e.jpg" class="w-20 h-20" alt="Product-image">
+                <div class="flex flex-col items-start justify-center px-1">
+                  <p class="text-left">Lorem, ipsum dolor.</p>
+                  <p class="text-left">Price: $59.80</p>
+                  <a href="" class="mt-2 text-red-600">Remove</a>
+                </div>
+              </div>
+            </th>
+            <th class="w-1/3"><input type="number" value="1" class="border w-20"></th>
+            <th class="w-1/3 text-right">$59.80</th>
+          </tr>
+        </table>
+
+        <div class="total-price flex justify-end ">
+          <table class="text-left border-t-2 border-t-purple-500 w-full md:w-1/3 ">
+            <tr>
+              <td>Subtotal</td>
+              <td class="text-right">$179.4</td>
+            </tr>
+            <tr>
+              <td>Tax</td>
+              <td class="text-right">$17.5</td>
+            </tr>
+            <tr>
+              <td>Subtotal</td>
+              <td class="text-right">$196.4</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="flex justify-center">
+          <button class="px-4 py-2 mt-10 bg-orange-500 text-white font-medium rounded-md">
+            <a href="#">Buy Now</a>
+          </button>
+        </div>
+      </div>
+      
+
+      <footer class="w-full text-white bg-[#122466] py-5 space-y-16 sm:space-y-0">
+        <div></div>
+        <div class="row w-[85%] m-auto flex flex-wrap items-start justify-between  my-5 pb-7">
+          <div class="col basis-full md:basis-1/4 p-[10px]">
+            <img src="../img/logo.f73be6f8.jpg" class="rounded-full mb-6 h-36" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas a, error neque beatae laboriosam, rem in
+              commodi unde fugit officia culpa incidunt amet.</p>
+          </div>
+          <div class="col basis-full md:basis-[15%] p-[10px] ">
+            <h3 class="w-fit mb-10 relative font-semibold text-2xl">Address</h3>
+  
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <p class="email">lorem123@gmail.com</p>
+            <h4 class="font-semibold my-5">+91 - 1234567890</h4>
+          </div>
+          <div class="col basis-full md:basis-[15%] p-[10px]">
+            <h3 class="w-fit mb-10 relative font-semibold text-2xl">Links</h3>
+            <ul class="space-y-3">
+              <li></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Shop</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">New Arrival</a></li>
+              <li><a href="">Our Partners</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col basis-full md:basis-1/4 p-[10px]">
+            <h3 class="w-fit mb-10 relative font-semibold text-2xl">NewsLetter</h3>
+            <form action="" class="pb-[15px] flex justify-center items-center border-b-4">
+              <div class="flex h-[35px]">
+                <div class="flex justify-center items-center">
+                  <i class="fa-solid fa-envelope-circle-check text-3xl"></i>
+                </div>
+                <input type="email" class="outline-none cursor-pointer bg-transparent w-full h-[35px] px-4 py-2"
+                  name="email-footer" id="email-footer" placeholder="Enter your email id" required>
+                <button
+                  class="px-4 py-2 active:border focus:border bg-green-500 h-[35px] flex justify-center items-center"><i
+                    class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </form>
+            <div class="my-3 flex justify-evenly">
+              <div class="fb w-10 h-10 flex justify-center items-center ">
+                <i
+                  class="text-2xl cursor-pointer transition hover:scale-125 hover:ring-4 fa-brands rounded-full px-1 fa-facebook"></i>
+              </div>
+              <div class="tw w-10 h-10 flex justify-center items-center ">
+                <i
+                  class="text-2xl cursor-pointer transition hover:scale-125 hover:ring-4 fa-brands rounded-full px-1 fa-twitter"></i>
+              </div>
+              <div class="wa w-10 h-10 flex justify-center items-center ">
+                <i
+                  class="text-2xl cursor-pointer transition hover:scale-125 hover:ring-4 fa-brands rounded-full px-1 fa-whatsapp"></i>
+              </div>
+              <div class="lin w-10 h-10 flex justify-center items-center ">
+                <i
+                  class="text-2xl cursor-pointer transition hover:scale-125 hover:ring-4 fa-brands rounded-full px-1 fa-linkedin"></i>
+              </div>
+              <div class="in w-10 h-10 flex justify-center items-center ">
+                <i
+                  class="text-2xl cursor-pointer transition hover:scale-125 hover:ring-4 fa-brands rounded-full px-1 fa-instagram"></i>
+              </div>
+  
+  
+  
+  
+            </div>
+          </div>
+        </div>
+        <div class="w-3/4 block mx-auto">
+          <hr class=" h-1 ">
+          <p class="text-center font-medium text-xs py-6">Copyright &copy; All rights reserved.</p>
+        </div>
+      </footer>
+
+    </div>
+
+    
+    <script>
+      (function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))l(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const n of t.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&l(n)}).observe(document,{childList:!0,subtree:!0});function i(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerpolicy&&(t.referrerPolicy=e.referrerpolicy),e.crossorigin==="use-credentials"?t.credentials="include":e.crossorigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function l(e){if(e.ep)return;e.ep=!0;const t=i(e);fetch(e.href,t)}})();const s=document.getElementById("bar1"),c=document.getElementById("bar2"),o=document.getElementById("bar3"),a=document.getElementById("hamburger"),g=document.getElementById("nav");document.getElementById("home");a.addEventListener("click",function(){s.classList.toggle("translate-y-4"),s.classList.toggle("translate-y-3"),s.classList.toggle("rotate-45"),s.classList.toggle("bg-white"),s.classList.toggle("bg-[#fff000]"),c.classList.toggle("opacity-5"),o.classList.toggle("-translate-y-3"),o.classList.toggle("-rotate-45"),o.classList.toggle("bg-white"),o.classList.toggle("bg-[#fff000]"),g.classList.toggle("translate-y-[-1000px]")});
+
+      </script>
+
+  </body>
+</html>

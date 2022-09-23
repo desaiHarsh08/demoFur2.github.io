@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Login | iFurniture</title>
+    
+    <!-- <script type="module" crossorigin src="./assets/index.60732ff4.js"></script> -->
+    <link rel="stylesheet" href="./index.c7aaa718.css">
+  </head>
+  <body class="flex justify-center items-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-screen">
+    <div class="main-container bg-white w-96 mx-2">
+      <h1 class="text-3xl text-center font-medium my-3 py-3 border border-transparent border-b-blue-600">Login</h1>
+      <form action=""  class="w-[76%] sm:w-[90%] mx-auto mt-10">
+        <div class="row flex flex-col mb-5">
+          <input type="email" name="emailLogin" id="emailLogin" placeholder="Email" class="border p-2 outline-blue-600" required>
+        </div>
+        <div class="row flex flex-col ">
+          <input type="password" name="passwordLogin" id="passwordLogin" placeholder="Password" class="border p-2 outline-blue-600 " required>
+        </div>
+        <div class="row my-2">
+          <a href="#" class="text-blue-900 underline underline-offset-2">Forget Password?</a>
+        </div>
+        <div class="row">
+          <button  class="px-4 py-2 bg-blue-500 rounded-sm text-white font-semibold ">
+            <a href="../search-page/index.html" id="toDirect">
+              Login
+            </a>
+          </button>
+        </div>
+        <div class="row my-3 flex">
+          <p>Not a member?</p>
+          <a href="" class="mx-2 text-blue-900 underline underline-offset-2">Sign up</a>
+        </div>
+      </form>
+    </div>
+    
+<script>
+  (function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))n(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const o of t.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&n(o)}).observe(document,{childList:!0,subtree:!0});function i(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerpolicy&&(t.referrerPolicy=e.referrerpolicy),e.crossorigin==="use-credentials"?t.credentials="include":e.crossorigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function n(e){if(e.ep)return;e.ep=!0;const t=i(e);fetch(e.href,t)}})();
+
+</script>
+    <script>
+      const userEmail = document.getElementById('emailLogin');
+      const userPassword = document.getElementById('passwordLogin');
+
+      function validateCredentials() {
+        if( (userEmail.value === "testEmail123@gmail.com") && (userPassword.value === "pass@123") ){
+          console.log("fired");
+          window.location = "../search-page/index.html";
+          // document.getElementById('toDirect')
+        }
+        else{
+          console.log('no')
+        }
+        // e.preventDefault()
+      }
+    </script>
+  </body>
+</html>
